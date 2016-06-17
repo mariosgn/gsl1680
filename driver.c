@@ -503,13 +503,13 @@ void read_coords(struct i2c_client *cliente) {
 					cstatus=RS_one_C;
 				}
 			} else {
-				if ((old_x!=x1)||(old_y!=y1)) {
+				//if ((old_x!=x1)||(old_y!=y1)) {
 					move_to(cliente,old_x,old_y);
 					click(cliente,1);
 					old_x=x1;
 					old_y=x2;
 					cstatus=RS_one_B;
-				}
+				//}
 			}
 			return;
 		}
